@@ -1,0 +1,4 @@
+ollama
+load_dotenv
+discord.py
+audioop-lts
