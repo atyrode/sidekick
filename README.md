@@ -29,7 +29,7 @@ Create a `.env` file in the root directory with the following variables:
 
 ```plaintext
 DISCORD_TOKEN=your_discord_token
-USERNAME=ollama_username
+USERNAME=ollama_username <-- This is Caddyfile basicauth on the ollama server machine
 PASSWORD=ollama_password
 HOST=ollama_host
 PORT=ollama_port
