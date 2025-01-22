@@ -1,9 +1,5 @@
 # Discord AI Chat Bot
 
-A Discord bot that integrates with Ollama to provide AI chat capabilities using the Deepseek model family.
-
-## Overview
-
 This project implements a Discord bot that can interact with users through direct messages and server channels while leveraging Ollama's API to generate AI responses using various Deepseek models.
 
 ## Prerequisites
