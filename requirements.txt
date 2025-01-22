@@ -1,4 +1,5 @@
 ollama
 load_dotenv
-discord.py
+discord.py[voice]
 audioop-lts
+sqlalchemy

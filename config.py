@@ -16,6 +16,8 @@ MODEL = {
     }
 }
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+WHITELISTED_GUILD_IDS = [909828990007644191, ]
+WHITELISTED_USER_IDS = [108678164552663040, 660524457206480964]
 
 USERNAME = os.getenv('USERNAME')
 PASSWORD = os.getenv('PASSWORD')
@@ -23,8 +25,8 @@ HOST = os.getenv('HOST')
 PORT = os.getenv('PORT')
 
 # Create basic auth header
-credentials = f"{USERNAME}:{PASSWORD}"
-encoded_credentials = base64.b64encode(credentials.encode('utf-8')).decode('utf-8')
+CADDY_AUTH = f"{USERNAME}:{PASSWORD}"
+encoded_credentials = base64.b64encode(CADDY_AUTH.encode('utf-8')).decode('utf-8')
 auth_header = f"Basic {encoded_credentials}"
 
 ollama = Client(
