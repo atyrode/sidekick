@@ -1,14 +1,14 @@
-# Discord AI Chat Bot
+# 🤖 Discord AI Chat Bot
 
 This project implements a Discord bot that can interact with users through direct messages and server channels while leveraging Ollama's API to generate AI responses using various Deepseek models.
 
-## Prerequisites
+## 📋 Prerequisites
 
 - Python 3.x
 - Discord Bot Token
 - Ollama server setup with authentication
 
-## Installation
+## 🚀 Installation
 
 1. Clone the repository
 2. Create a virtual environment:
@@ -23,7 +23,7 @@ This project implements a Discord bot that can interact with users through direc
    pip install -r requirements.txt
    ```
 
-## Configuration
+## ⚙️ Configuration
 
 Create a `.env` file in the root directory with the following variables:
 
@@ -35,9 +35,9 @@ HOST=ollama_host
 PORT=ollama_port
 ```
 
-## Project Structure
+## 📁 Project Structure
 
-### Config Module
+### 🔧 Config Module
 
 ```python
 MODEL = {
@@ -53,7 +53,7 @@ MODEL = {
 
 Defines available Deepseek models and handles authentication configuration for the Ollama client.
 
-### Discord Bot
+### 🎮 Discord Bot
 
 ```python
 @client.event
@@ -82,7 +82,7 @@ Implements a Discord bot that:
 - Handles both direct messages and server messages
 - Responds to basic commands (e.g., `$hello`)
 
-### Main Module
+### 🎯 Main Module
 
 ```python
 def pull_model(ollama: Client, model: str) -> None:
@@ -104,14 +104,14 @@ Provides core functionality for:
 - Checking model availability
 - Handling chat interactions with the AI model
 
-## Features
+## ✨ Features
 
 - Multiple Deepseek model support (1.5B to 32B parameters)
 - Secure authentication with Ollama API
 - Discord message logging for both DMs and server messages
 - Easy model management and chat interaction
 
-## Usage
+## 📝 Usage
 
 1. Ensure your environment variables are set
 2. Run the bot:
@@ -119,17 +119,17 @@ Provides core functionality for:
    python bot.py
    ```
 
-## Security
+## 🔒 Security
 
 The project implements basic authentication for Ollama API access and stores sensitive information in environment variables for security.
 
-## Dependencies
+## 📦 Dependencies
 
 - discord.py - Discord API wrapper
 - ollama - Ollama API client
 - python-dotenv - Environment variable management
 - audioop-lts - Audio processing support
 
-## Contributing
+## 🤝 Contributing
 
 Feel free to submit issues and pull requests to improve the functionality of this bot.
