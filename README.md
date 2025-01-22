@@ -1,4 +1,4 @@
-# 🤖 Discord AI Chat Bot
+# 🤖 Sidekick
 
 This project implements a Discord bot that can interact with users through direct messages and server channels while leveraging Ollama's API to generate AI responses using various Deepseek models.
 
